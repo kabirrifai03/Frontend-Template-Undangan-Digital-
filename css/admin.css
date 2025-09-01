@@ -15,12 +15,206 @@
     background-color: rgba(192, 192, 192, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 2050px) {
+    .frame-bm { width: 99%; left: 0; margin-left: 0px}
+}
+
+@media screen and (max-width: 2000px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -20px}
+}
+
+@media screen and (max-width: 1950px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -25px}
+}
+
+@media screen and (max-width: 1900px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -30px}
+}
+
+@media screen and (max-width: 1850px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -35px}
+}
+
+@media screen and (max-width: 1800px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -40px}
+}
+
+@media screen and (max-width: 1750px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -45px}
+}
+
+@media screen and (max-width: 1700px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -50px}
+}
+
+@media screen and (max-width: 1650px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -55px}
+}
+
+@media screen and (max-width: 1600px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -60px}
+}
+
+@media screen and (max-width: 1550px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -65px}
+}
+
+@media screen and (max-width: 1500px) {
     html {
         scrollbar-width: none !important;
         -ms-overflow-style: none !important;
     }
+    .frame-bm { width: 99%; left: 0; margin-left: -70px}
 }
+
+@media screen and (max-width: 1450px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -75px}
+}
+
+@media screen and (max-width: 1400px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -80px}
+}
+
+@media screen and (max-width: 1350px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -85px}
+}
+
+@media screen and (max-width: 1300px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -90px}
+}
+
+@media screen and (max-width: 1250px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -95px}
+}
+
+@media screen and (max-width: 1200px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -100px}
+}
+
+@media screen and (max-width: 1150px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -105px}
+}
+
+
+@media screen and (max-width: 1100px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -110px}
+}
+
+@media screen and (max-width: 1050px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -115px}
+}
+
+
+@media screen and (max-width: 1000px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -120px}
+}
+
+@media screen and (max-width: 950px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -125px}
+}
+
+
+@media screen and (max-width: 900px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -130px}
+}
+
+@media screen and (max-width: 850px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -135px}
+}
+
+@media screen and (max-width: 800px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -140px}
+}
+
+@media screen and (max-width: 750px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -145px}
+}
+
+@media screen and (max-width: 700px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -160px;}
+}
+
+@media screen and (max-width: 650px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -165px}
+}
+
+@media screen and (max-width: 600px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -175px;}
+}
+
+@media screen and (max-width: 550px) {
+    .frame-bm { width: 99%; left: 0; margin-left: -185px}
+}
+
+
+  .frame img {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+  }
+  
+  .frame-tl {
+    top: 0;
+    left: 0;
+
+
+  }
+  .frame-tr {
+    top: 0;
+    right: 0;
+
+  }
+
+.frame-bm {
+    bottom: 0;
+    left: 38%; /* Pindahkan ke 50% dari kiri */
+    transform: translateX(-38%); /* Geser kembali 50% dari lebar elemen */
+    max-width: 500px;
+    height: 140px; /* bisa diatur sesukanya */
+}
+
+
+/* Animasi blur ke jelas */
+.blur-fade {
+    opacity: 0;
+    filter: blur(10px);
+    animation: blurIn 2s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes blurIn {
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Foto berputar sekali lalu berhenti */
+.rotate-once {
+    animation: rotateOnce 2s ease-out forwards;
+}
+@keyframes rotateOnce {
+    from { transform: rotate(0deg) scale(0.8); opacity: 0; }
+    to { transform: rotate(360deg) scale(1); opacity: 1; }
+}
+
+
+  @media (max-width: 500px) {
+    .frame-tl, .frame-tr { max-width: 50px;}
+    .frame-bm { width: 99%; left: 0; margin-left: 2px;}
+  }
+
+
+  @media (max-width: 576px) {
+    #welcome img[alt="wayang kiri"],
+    #welcome img[alt="wayang kanan"] {
+      max-width: 50px; /* biar tetep kelihatan tapi ga ganggu foto di HP */
+      margin: 0 -4px;
+    }
+    #welcome img[alt="background"] {
+      max-width: 140px; /* foto agak kecil di HP */
+    }
+  }
+
 
 html[data-bs-theme="light"] .btn-theme-auto {
     color: var(--bs-dark);
@@ -46,3 +240,36 @@ html[data-bs-theme="light"] .btn-theme-auto:hover:not(.nav-link.active) {
     color: var(--bs-light) !important;
     background-color: var(--bs-danger) !important;
 }
+
+/* Wayang image styling */
+.wayang-img {
+  width: 60px;
+  height: auto;
+  filter: brightness(0.9) sepia(0.3) saturate(0.8);
+
+  /* 2 animasi: masuk → lalu mengapung halus */
+  animation: wayangIn 2s ease forwards, wayangFloat 6s ease-in-out infinite;
+  animation-delay: 0s, 2s; /* delay float setelah masuk */
+}
+
+/* Animasi masuk dari kanan */
+@keyframes wayangIn {
+  from {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animasi goyang halus naik-turun (efek gelombang) */
+@keyframes wayangFloat {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-12px); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(12px); }
+  100% { transform: translateY(0); }
+}
+

@@ -489,10 +489,18 @@ export const comment = (() => {
             }
         }
 
-        const response = await request(HTTP_POST, `/api/comment?lang=${lang.getLanguage()}`)
-            .token(session.getToken())
-            .body(dto.postCommentRequest(id, nameValue, isPresence, gifIsOpen ? null : form.value, gifId))
-            .send(dto.getCommentResponse);
+        const formData = new FormData();
+        formData.append('name', nameValue);
+        formData.append('presence', isPresence ? 1 : 0);
+        formData.append('comment', form.value);
+        formData.append("total_guest", document.getElementById("form-total").value);
+
+
+        const response = await fetch('https://backend-undangan-digital-production.up.railway.app/api/', {
+            method: 'POST',
+            body: formData
+        }).then(r => r.json())
+        ;
 
         if (name) {
             name.disabled = false;
@@ -577,6 +585,29 @@ export const comment = (() => {
         like.addListener(response.data.uuid);
         lastRender.push(response.data.uuid);
     };
+
+
+async function replyComment(parentUuid) {
+  const input = document.getElementById(`reply-input-${parentUuid}`);
+  const text = input.value.trim();
+  if (!text) return;
+
+  const name = document.getElementById("form-name").value || "Anonim";
+
+  const formData = new FormData();
+  formData.append("name", name);
+  formData.append("comment", text);
+  formData.append("parent_uuid", parentUuid);
+
+  const res = await fetch(API_URL, { method: "POST", body: formData });
+  const json = await res.json();
+
+  if (json.success) {
+    input.value = "";
+    loadComments(); // reload biar realtime
+  }
+}
+
 
     /**
      * @param {HTMLButtonElement} button

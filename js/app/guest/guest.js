@@ -59,11 +59,7 @@ export const guest = (() => {
     /**
      * @returns {void}
      */
-    const showGuestName = () => {
-        /**
-         * Make sure "to=" is the last query string.
-         * Ex. ulems.my.id/?id=some-uuid-here&to=name
-         */
+        const showGuestName = () => {
         const raw = window.location.search.split('to=');
         let name = null;
 
@@ -71,22 +67,28 @@ export const guest = (() => {
             name = window.decodeURIComponent(raw[1]);
         }
 
-        if (name) {
-            const guestName = document.getElementById('guest-name');
+        // Tentukan nama default jika tidak ada parameter 'to' atau kosong
+        const defaultName = "Teman teman semua";
+        const finalName = name || defaultName;
+
+        const guestName = document.getElementById('guest-name');
+        if (guestName) {
             const div = document.createElement('div');
             div.classList.add('m-2');
 
-            const template = `<small class="mt-0 mb-1 mx-0 p-0">${util.escapeHtml(guestName?.getAttribute('data-message'))}</small><p class="m-0 p-0" style="font-size: 1.25rem">${util.escapeHtml(name)}</p>`;
+            // Gunakan finalName untuk menampilkan nama
+            const template = `<small class="mt-0 mb-1 mx-0 p-0">${util.escapeHtml(guestName?.getAttribute('data-message'))}</small><p class="m-0 p-0" style="font-size: 1.25rem">${util.escapeHtml(finalName)}</p>`;
             util.safeInnerHTML(div, template);
 
-            guestName?.appendChild(div);
+            guestName.appendChild(div);
         }
 
         const form = document.getElementById('form-name');
         if (form) {
-            form.value = information.get('name') ?? name;
+            form.value = information.get('name') ?? finalName;
         }
     };
+
 
     /**
      * @returns {Promise<void>}
