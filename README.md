@@ -10,8 +10,7 @@
 ## 🚀 Demo
 Untuk kamu yang ingin melihat demo terlebih dahulu:
 
-[http://templateundangandigital.vercel.app/?to=Teman teman semua](http://templateundangandigital.vercel.app/?to=Teman teman semua)
-
+http://templateundangandigital.vercel.app/
 ## 📦 Documentation
 
 * Jalankan perintah `npm install`, lalu `npm run dev`, dan buka `http://localhost:8080`.
