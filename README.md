@@ -37,7 +37,7 @@ http://templateundangandigital.vercel.app/
     cek tiktok
 
 - Presentation
-    otw
+    cek tiktok
 
 ## ⏰ Trial API
 Untuk kamu yang ingin mencoba secara gratis:
@@ -66,4 +66,3 @@ If you find any security vulnerabilities in this undangan, please email DKL via 
 ## 📜 License
 
 Undangan is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Frontend-Template-Undangan-Digital-
