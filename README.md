@@ -10,7 +10,7 @@
 ## 🚀 Demo
 Untuk kamu yang ingin melihat demo terlebih dahulu:
 
-[https://ulems.my.id/?to=Teman teman semua](https://ulems.my.id/?to=Teman%20teman%20semua)
+[http://templateundangandigital.vercel.app/?to=Teman teman semua](http://templateundangandigital.vercel.app/?to=Teman teman semua)
 
 ## 📦 Documentation
 
@@ -35,15 +35,14 @@ Untuk kamu yang ingin melihat demo terlebih dahulu:
 ## 🔥 Deployment API
 
 - Video\
-    otw
+    cek tiktok
 
 - Presentation
-    [https://docs.google.com/presentation](https://docs.google.com/presentation/d/1EY2YmWdZUI7ASoo0f2wvU7ec_Yt0uZanYa8YLbfNysk/edit)
+    otw
 
 ## ⏰ Trial API
 Untuk kamu yang ingin mencoba secara gratis:
-
-[https://trial.ulems.my.id](https://trial.ulems.my.id)
+    cek tiktok
 
 ## ⚙️ Tech stack
 
@@ -63,8 +62,9 @@ I'm very open to those of you who want to contribute to the undangan!
 
 ## 🐞 Security Vulnerabilities
 
-If you find any security vulnerabilities in this undangan, please email DKL via [dewanakretarta29@gmail.com](mailto:dewanakretarta29@gmail.com).
+If you find any security vulnerabilities in this undangan, please email DKL via [achmadkabir003@gmail.com](mailto:achmadkabir003@gmail.com).
 
 ## 📜 License
 
 Undangan is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Frontend-Template-Undangan-Digital-

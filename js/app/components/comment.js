@@ -496,7 +496,7 @@ export const comment = (() => {
         formData.append("total_guest", document.getElementById("form-total").value);
 
 
-        const response = await fetch('https://backend-undangan-digital-production.up.railway.app/api/', {
+        const response = await fetch('https://backend-template-undangan-digital-production.up.railway.app/api/', {
             method: 'POST',
             body: formData
         }).then(r => r.json())
